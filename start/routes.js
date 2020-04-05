@@ -29,11 +29,6 @@ Route.resource('productos', 'ProductoController')
     .apiOnly()
     .formats(['json'])
 
-Route.post('productos/venta/:id', 'ProductoController.venta')
-  .middleware('auth')
-  .middleware('findProducto')
-  .formats(['json'])
-
 //Usuarios
 Route
   .post('login', 'UserController.login')

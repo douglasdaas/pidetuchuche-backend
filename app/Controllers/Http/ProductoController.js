@@ -28,7 +28,6 @@ class ProductoController {
       .with('categorias')
       .fetch()
 
-
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Lista de todos los productos',
       datos: productos
@@ -166,43 +165,6 @@ class ProductoController {
       await producto.categorias().attach(categorias)
     }
     producto.categorias = await producto.categorias().fetch()
-
-    response.header('Access-Control-Allow-Origin', '*').status(200).json({
-      mensaje: 'Producto actualizado correctamente.',
-      datos: producto
-    })
-
-  }
-
-  /**
-   * Update producto details.
-   * PUT or PATCH productos/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
-  async venta ({ params: {id} ,request, response }) {
-
-   let producto = await Producto.find(id)
-
-    const {cantidad} = request.only(['cantidad'])
-    console.log('producto.cantidad ',producto.cantidad)
-    console.log('cv:: ',cantidad)
-
-    if (producto.cantidad-cantidad < 0){
-      return response.status(400).json({
-        mensaje: 'No se puede vender más de lo que hay en existencia.',
-        existencia: producto.cantidad,
-        ventaIntentada: cantidad
-      })
-    }
-
-    producto.merge({cantidad: producto.cantidad - cantidad})
-
-
-    await producto.save()
-
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Producto actualizado correctamente.',

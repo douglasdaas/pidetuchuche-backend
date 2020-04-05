@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -126,7 +125,7 @@
       <workItem from="1585602787440" duration="7152000" />
       <workItem from="1586045794498" duration="810000" />
       <workItem from="1586046816242" duration="2950000" />
-      <workItem from="1586110530647" duration="262000" />
+      <workItem from="1586110530647" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -224,14 +223,20 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586049211961" />
-    <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584950348486">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586111274817">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950348486" />
-    <state x="508" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584589270197">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1586111274817" />
+    <state x="100" y="123" width="1240" height="622" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586111274818">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="100" y="123" width="1240" height="622" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1586111274818" />
+    <state x="508" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586111138543">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="508" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1584589270196" />
+    <state x="508" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1586111138543" />
     <state x="385" y="187" width="667" height="486" key="find.popup" timestamp="1585003054406">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
