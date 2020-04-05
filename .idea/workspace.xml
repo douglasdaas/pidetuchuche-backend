@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YSCS1oVaJuB6hFq3xCIuF9jd5V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3333/productos" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3333" />
+          <option name="urlPath" value="productos" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="rest-api_1#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_1#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="" />
+      <created>1582926605361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582926605361</updated>
+      <workItem from="1582926607395" duration="206000" />
+      <workItem from="1582926823739" duration="13715000" />
+      <workItem from="1583340303751" duration="9789000" />
+      <workItem from="1584562615079" duration="13537000" />
+      <workItem from="1584647120334" duration="14891000" />
+      <workItem from="1584731009422" duration="5875000" />
+      <workItem from="1584828650480" duration="633000" />
+      <workItem from="1584906004987" duration="1900000" />
+      <workItem from="1584912709659" duration="7532000" />
+      <workItem from="1584950119128" duration="1405000" />
+      <workItem from="1584953238513" duration="638000" />
+      <workItem from="1585002681019" duration="1349000" />
+      <workItem from="1585602787440" duration="7152000" />
+      <workItem from="1586045794498" duration="810000" />
+      <workItem from="1586046816242" duration="2950000" />
+      <workItem from="1586110530647" duration="262000" />
+    </task>
+    <task id="LOCAL-00001" summary="Proyecto">
+      <created>1584562268307</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584562268307</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se envia productos con categorias">
+      <created>1586046266262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586046266262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se agrego ruta venta">
+      <created>1586049210386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586049210386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Proyecto" />
+    <MESSAGE value="Se envia productos con categorias" />
+    <MESSAGE value="Se agrego ruta venta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego ruta venta" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="320" y="96" key="#Notifications/0.23.1440.822@0.23.1440.822" timestamp="1586046306260" />
+    <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584562761961">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586049210256">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1584562268076" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586049210256" />
+    <state x="119" y="143" width="1200" height="574" key="DiffContextDialog" timestamp="1584950680084">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="119" y="143" width="1200" height="574" key="DiffContextDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950680084" />
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom" timestamp="1583170036696">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1582952296383" />
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1582995327376" />
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1583170036696" />
+    <state width="1419" height="209" key="GridCell.Tab.0.center" timestamp="1583170036695">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1582952296383" />
+    <state width="1419" height="209" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1582995327375" />
+    <state width="1419" height="209" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1583170036695" />
+    <state width="1419" height="209" key="GridCell.Tab.0.left" timestamp="1583170036694">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1582952296382" />
+    <state width="1419" height="209" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1582995327374" />
+    <state width="1419" height="209" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1583170036694" />
+    <state width="1419" height="209" key="GridCell.Tab.0.right" timestamp="1583170036695">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1582952296383" />
+    <state width="1419" height="209" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1582995327376" />
+    <state width="1419" height="209" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1583170036695" />
+    <state x="229" y="69" key="SettingsEditor" timestamp="1586046659962">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
+    <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586049211961">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586049211961" />
+    <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584950348486">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950348486" />
+    <state x="508" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584589270197">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="508" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1584589270196" />
+    <state x="385" y="187" width="667" height="486" key="find.popup" timestamp="1585003054406">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="385" y="187" width="667" height="486" key="find.popup/0.23.1440.814@0.23.1440.814" timestamp="1585003054406" />
+    <state x="385" y="187" width="667" height="488" key="find.popup/0.23.1440.816@0.23.1440.816" timestamp="1584951183559" />
+    <state x="385" y="195" key="run.anything.popup" timestamp="1584648855792">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="385" y="195" key="run.anything.popup/0.23.1440.814@0.23.1440.814" timestamp="1584648855792" />
+    <state x="384" y="163" width="670" height="687" key="search.everywhere.popup" timestamp="1585610690072">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="384" y="161" width="670" height="676" key="search.everywhere.popup/0.23.1440.814@0.23.1440.814" timestamp="1584473522484" />
+    <state x="384" y="163" width="670" height="687" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1585610690072" />
+  </component>
+</project>

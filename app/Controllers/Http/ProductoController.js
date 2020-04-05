@@ -1,0 +1,235 @@
+'use strict'
+
+const Producto = use('App/Models/Producto')
+/** @typedef {import('@adonisjs/framework/src/Request')} Request */
+/** @typedef {import('@adonisjs/framework/src/Response')} Response */
+/** @typedef {import('@adonisjs/framework/src/View')} View */
+
+const Cloudinary = use('App/Services/Cloudinary')
+const Helpers = use('Helpers')
+
+/**
+ * Resourceful controller for interacting with productos
+ */
+class ProductoController {
+  /**
+   * Show a list of all productos.
+   * GET productos
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   * @param {View} ctx.view
+   */
+  async index ({ response }) {
+
+    const productos = await Producto
+      .query()
+      .with('categorias')
+      .fetch()
+
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: 'Lista de todos los productos',
+      datos: productos
+    })
+  }
+
+
+  /**
+   * Create/save a new producto.
+   * POST productos
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   */
+  async store ({ request, response }) {
+
+    console.log("Request.body::",request.body)
+
+    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
+
+    let { categorias } =  request.post()
+    if (categorias !== undefined ){
+      categorias = JSON.parse(categorias)
+    }
+
+    try{
+
+      if(request.file('imagen') && request.file('imagen') !== undefined ){
+
+        const imagenProducto = request.file('imagen', {
+          types: ['image']
+        })
+
+
+        var cloudinary_response = await Cloudinary.upload(imagenProducto)
+
+
+       informacionProducto.ruta_imagen = cloudinary_response.url
+      }
+
+
+    }catch(error){
+
+
+      return response.status(500).json({status: false, error: error })
+    }
+
+    const producto = await Producto.create(informacionProducto)
+
+    if (categorias && categorias.length > 0){
+      await producto.categorias().attach(categorias)
+      producto.categorias = await producto.categorias().fetch()
+    }
+
+    response.header('Access-Control-Allow-Origin', '*').status(201).json({
+      mensaje: 'Nuevo producto creado correctamente.',
+      datos: producto
+    })
+  }
+
+  /**
+   * Display a single producto.
+   * GET productos/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   * @param {View} ctx.view
+   */
+  async show ({ request, response }) {
+
+    const { producto } = request
+
+
+    const categorias = await producto.categorias().fetch()
+
+    producto.categorias = categorias
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: 'Producto encontrado correctamente.',
+      datos: producto
+    })
+
+  }
+
+  /**
+   * Update producto details.
+   * PUT or PATCH productos/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   */
+  async update ({ request, response }) {
+
+    let { categorias } =  request.post()
+    if (categorias !== undefined ){
+      categorias = JSON.parse(categorias)
+    }
+    const { producto } = request
+
+    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
+
+    try{
+
+      if(request.file('imagen') && request.file('imagen') !== undefined){
+
+        const imagenProducto = request.file('imagen', {
+          types: ['image']
+        })
+
+
+        var cloudinary_response = await Cloudinary.upload(imagenProducto)
+
+
+        informacionActualizadaProducto.ruta_imagen = cloudinary_response.url
+      }
+
+
+
+    }catch(error){
+
+      return response.status(500).json({status: false, error: error })
+    }
+
+    producto.merge(informacionActualizadaProducto)
+
+    await producto.save()
+
+    console.log(categorias)
+
+    if (categorias && categorias.length > 0){
+      await producto.categorias().detach()
+      await producto.categorias().attach(categorias)
+    }
+    producto.categorias = await producto.categorias().fetch()
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: 'Producto actualizado correctamente.',
+      datos: producto
+    })
+
+  }
+
+  /**
+   * Update producto details.
+   * PUT or PATCH productos/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   */
+  async venta ({ params: {id} ,request, response }) {
+
+   let producto = await Producto.find(id)
+
+    const {cantidad} = request.only(['cantidad'])
+    console.log('producto.cantidad ',producto.cantidad)
+    console.log('cv:: ',cantidad)
+
+    if (producto.cantidad-cantidad < 0){
+      return response.status(400).json({
+        mensaje: 'No se puede vender más de lo que hay en existencia.',
+        existencia: producto.cantidad,
+        ventaIntentada: cantidad
+      })
+    }
+
+    producto.merge({cantidad: producto.cantidad - cantidad})
+
+
+    await producto.save()
+
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: 'Producto actualizado correctamente.',
+      datos: producto
+    })
+
+  }
+
+  /**
+   * Delete a producto with id.
+   * DELETE productos/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   */
+  async destroy ({ request, response }) {
+
+    const { producto } = request
+
+    producto.delete()
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      message: 'Borrado con exito.',
+      eliminado: true
+    })
+  }
+}
+
+module.exports = ProductoController

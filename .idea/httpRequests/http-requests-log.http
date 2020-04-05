@@ -1,0 +1,15 @@
+GET http://localhost:3333/productos
+Accept: application/json
+
+<> 2020-02-29T125459.200.json
+
+###
+
+GET http://localhost:3333/productos
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-02-29T125212.200.json
+
+###
+
