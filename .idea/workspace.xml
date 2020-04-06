@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="" />
+    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +129,9 @@
       <workItem from="1586045794498" duration="810000" />
       <workItem from="1586046816242" duration="2950000" />
       <workItem from="1586110530647" duration="566000" />
+      <workItem from="1586111113020" duration="826000" />
+      <workItem from="1586112345142" duration="2378000" />
+      <workItem from="1586204679213" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -148,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586049210386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Arreglo de errores">
+      <created>1586111356479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586111356479</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Se agrefo ruta de venta y los productos llegan en orden de prioridad acendente (menor a mayor)">
+      <created>1586204132696</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586204132696</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +179,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -170,7 +192,9 @@
     <MESSAGE value="Proyecto" />
     <MESSAGE value="Se envia productos con categorias" />
     <MESSAGE value="Se agrego ruta venta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego ruta venta" />
+    <MESSAGE value="Arreglo de errores" />
+    <MESSAGE value="Se agrefo ruta de venta y los productos llegan en orden de prioridad acendente (menor a mayor)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrefo ruta de venta y los productos llegan en orden de prioridad acendente (menor a mayor)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
@@ -181,15 +205,17 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
-    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586049210256">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586204132528">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1584562268076" />
-    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586049210256" />
-    <state x="119" y="143" width="1200" height="574" key="DiffContextDialog" timestamp="1584950680084">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1586204132528" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586111356314" />
+    <state x="119" y="144" width="1200" height="578" key="DiffContextDialog" timestamp="1586203905357">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="119" y="143" width="1200" height="574" key="DiffContextDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950680084" />
+    <state x="119" y="144" width="1200" height="578" key="DiffContextDialog/0.23.1440.821@0.23.1440.821" timestamp="1586203905357" />
     <state width="1419" height="209" key="GridCell.Tab.0.bottom" timestamp="1583170036696">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -219,14 +245,16 @@
     </state>
     <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
     <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586049211961">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586204134582">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586049211961" />
-    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586111274817">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1586204134582" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586111361006" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586203905357">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950348486" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.821@0.23.1440.821" timestamp="1586203905357" />
     <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1586111274817" />
     <state x="100" y="123" width="1240" height="622" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586111274818">
       <screen x="0" y="23" width="1440" height="822" />
