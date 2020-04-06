@@ -130,7 +130,7 @@
       <workItem from="1586110530647" duration="566000" />
       <workItem from="1586111113020" duration="826000" />
       <workItem from="1586112345142" duration="2378000" />
-      <workItem from="1586204679213" duration="397000" />
+      <workItem from="1586204679213" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -174,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586204832278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Algo con la BD">
+      <created>1586205092671</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586205092671</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Imagen para productos sin imagen">
+      <created>1586208638415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586208638415</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +215,8 @@
     <MESSAGE value="Arreglo de errores" />
     <MESSAGE value="Se agrefo ruta de venta y los productos llegan en orden de prioridad acendente (menor a mayor)" />
     <MESSAGE value="Algo con la BD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Algo con la BD" />
+    <MESSAGE value="Imagen para productos sin imagen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imagen para productos sin imagen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
@@ -212,12 +227,12 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
-    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586204832085">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586208638015">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1584562268076" />
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1586204832085" />
-    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586111356314" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586208638015" />
     <state x="119" y="144" width="1200" height="578" key="DiffContextDialog" timestamp="1586203905357">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -256,11 +271,11 @@
     </state>
     <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
     <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586204834164">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586208640670">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1586204834164" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586111361006" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586208640670" />
     <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586203905357">
       <screen x="0" y="23" width="1440" height="821" />
     </state>

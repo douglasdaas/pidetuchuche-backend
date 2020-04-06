@@ -125,13 +125,13 @@ class ProductoController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async update ({ request, response }) {
+  async update ({ params: {id}, request, response }) {
 
     let { categorias } =  request.post()
     if (categorias !== undefined ){
       categorias = JSON.parse(categorias)
     }
-    const { producto } = request
+    const  producto  = await Producto.find(id)
 
     const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
 
