@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +132,7 @@
       <workItem from="1586110530647" duration="566000" />
       <workItem from="1586111113020" duration="826000" />
       <workItem from="1586112345142" duration="2378000" />
-      <workItem from="1586204679213" duration="1676000" />
+      <workItem from="1586204679213" duration="2499000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -188,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586208638415</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="arreglo de update producto">
+      <created>1586209667079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586209667079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +225,8 @@
     <MESSAGE value="Se agrefo ruta de venta y los productos llegan en orden de prioridad acendente (menor a mayor)" />
     <MESSAGE value="Algo con la BD" />
     <MESSAGE value="Imagen para productos sin imagen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Imagen para productos sin imagen" />
+    <MESSAGE value="arreglo de update producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglo de update producto" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
@@ -227,17 +237,18 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
-    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586208638015">
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586209666805">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1584562268076" />
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1586204832085" />
-    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586208638015" />
-    <state x="119" y="144" width="1200" height="578" key="DiffContextDialog" timestamp="1586203905357">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586209666805" />
+    <state x="119" y="144" width="1200" height="579" key="DiffContextDialog" timestamp="1586210108100">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="119" y="143" width="1200" height="574" key="DiffContextDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950680084" />
     <state x="119" y="144" width="1200" height="578" key="DiffContextDialog/0.23.1440.821@0.23.1440.821" timestamp="1586203905357" />
+    <state x="119" y="144" width="1200" height="579" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1586210108100" />
     <state width="1419" height="209" key="GridCell.Tab.0.bottom" timestamp="1583170036696">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -271,17 +282,17 @@
     </state>
     <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
     <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586208640670">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586209668860">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1586204834164" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586208640670" />
-    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586203905357">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586209668860" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586210108100">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="119" y="143" width="1200" height="574" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.816@0.23.1440.816" timestamp="1584950348486" />
     <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.821@0.23.1440.821" timestamp="1586203905357" />
-    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1586111274817" />
+    <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1586210108100" />
     <state x="100" y="123" width="1240" height="622" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586111274818">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -291,11 +302,12 @@
     </state>
     <state x="508" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1584589270196" />
     <state x="508" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1586111138543" />
-    <state x="385" y="187" width="667" height="486" key="find.popup" timestamp="1585003054406">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="385" y="189" width="667" height="491" key="find.popup" timestamp="1586210287306">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="385" y="187" width="667" height="486" key="find.popup/0.23.1440.814@0.23.1440.814" timestamp="1585003054406" />
     <state x="385" y="187" width="667" height="488" key="find.popup/0.23.1440.816@0.23.1440.816" timestamp="1584951183559" />
+    <state x="385" y="189" width="667" height="491" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1586210287305" />
     <state x="385" y="195" key="run.anything.popup" timestamp="1584648855792">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
