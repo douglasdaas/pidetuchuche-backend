@@ -68,6 +68,8 @@ class ProductoController {
 
 
        informacionProducto.ruta_imagen = cloudinary_response.url
+      } else {
+        informacionProducto.ruta_imagen = "https://res.cloudinary.com/dd5fhsqn0/image/upload/v1586208431/Pide%20tu%20Chuche/paerwru0hmtq5qhi44h5.png"
       }
 
 
@@ -146,6 +148,8 @@ class ProductoController {
 
 
         informacionActualizadaProducto.ruta_imagen = cloudinary_response.url
+      } else {
+        informacionProducto.ruta_imagen = "https://res.cloudinary.com/dd5fhsqn0/image/upload/v1586208431/Pide%20tu%20Chuche/paerwru0hmtq5qhi44h5.png"
       }
 
 
