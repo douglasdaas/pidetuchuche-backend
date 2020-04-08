@@ -4,7 +4,6 @@
     <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,10 @@
       <workItem from="1586110530647" duration="566000" />
       <workItem from="1586111113020" duration="826000" />
       <workItem from="1586112345142" duration="2378000" />
-      <workItem from="1586204679213" duration="2499000" />
+      <workItem from="1586204679213" duration="4331000" />
+      <workItem from="1586287047000" duration="8000" />
+      <workItem from="1586307407685" duration="17000" />
+      <workItem from="1586382689443" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -197,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586209667079</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="arreglo de update producto ahora si">
+      <created>1586210325058</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586210325058</updated>
+    </task>
+    <task id="LOCAL-00011" summary="arreglo de update producto ahora si">
+      <created>1586210382695</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586210382695</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +242,8 @@
     <MESSAGE value="Algo con la BD" />
     <MESSAGE value="Imagen para productos sin imagen" />
     <MESSAGE value="arreglo de update producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglo de update producto" />
+    <MESSAGE value="arreglo de update producto ahora si" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglo de update producto ahora si" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
@@ -237,12 +254,12 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
-    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586210324917">
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1586210382570">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1584562268076" />
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1586204832085" />
-    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586210324917" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586210382570" />
     <state x="119" y="144" width="1200" height="579" key="DiffContextDialog" timestamp="1586210108100">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -282,11 +299,11 @@
     </state>
     <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
     <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586209668860">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1586210384501">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1586204834164" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586209668860" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586210384501" />
     <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586210108100">
       <screen x="0" y="23" width="1440" height="822" />
     </state>

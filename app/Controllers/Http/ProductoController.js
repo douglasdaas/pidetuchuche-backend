@@ -166,7 +166,8 @@ class ProductoController {
 
     console.log(categorias)
 
-    if (categorias && categorias.length > 0){
+    await producto.categorias().detach()
+    if (categorias && categorias.length > 0 && categorias !== undefined){
       await producto.categorias().detach()
       await producto.categorias().attach(categorias)
     }
