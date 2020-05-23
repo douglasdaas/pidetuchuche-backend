@@ -35,6 +35,31 @@ class ProductoController {
     })
   }
 
+  /**
+   * Show a list of all productos principales.
+   * GET productos/principal
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   * @param {View} ctx.view
+   */
+  async principal ({ response }) {
+
+
+    const productos = await Producto
+      .query()
+      .where('principal', true)
+      .with('categorias')
+      .orderBy('prioridad', 'asc')
+      .fetch()
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: `Lista de todos los productos Principales, hay ${productos.toJSON().length} ${productos.toJSON().length === 1 ? 'producto principal' : 'productos principales' }`,
+      datos: productos
+    })
+  }
+
 
   /**
    * Create/save a new producto.
@@ -133,7 +158,7 @@ class ProductoController {
     }
     const  producto  = await Producto.find(id)
 
-    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
+    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal'])
 
 
     console.log(informacionActualizadaProducto)

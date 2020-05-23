@@ -34,12 +34,15 @@ Route.post('productos/venta/:id', 'ProductoController.venta')
   .middleware('findProducto')
   .formats(['json'])
 
+Route.get('productos-principal', 'ProductoController.principal')
+  .formats(['json'])
+
 //Usuarios
 Route
   .post('login', 'UserController.login')
 
 Route
-    .post('signup', 'UserController.signup')
+  .post('signup', 'UserController.signup')
 
 //Categorias
 Route
