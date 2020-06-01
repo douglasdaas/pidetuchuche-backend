@@ -53,3 +53,12 @@ Route
   ]))
   .apiOnly()
   .formats(['json'])
+
+//Miselaneo
+Route
+  .resource('miselaneos', 'MicelaneoController')
+  .middleware(new Map([
+    [['store', 'update', 'destroy'], ['auth']]
+  ]))
+  .apiOnly()
+  .formats(['json'])

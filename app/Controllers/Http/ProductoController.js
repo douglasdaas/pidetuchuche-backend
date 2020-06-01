@@ -6,7 +6,6 @@ const Producto = use('App/Models/Producto')
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 const Cloudinary = use('App/Services/Cloudinary')
-const Helpers = use('Helpers')
 
 /**
  * Resourceful controller for interacting with productos
