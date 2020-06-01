@@ -60,7 +60,7 @@ class MicelaneoController {
 
     try{
 
-      if(request.file('pdf') && request.file('imagen') !== undefined ){
+      if(request.file('pdf') && request.file('pdf') !== undefined ){
 
         const archivoPDF = request.file('pdf', {
           types: ['pdf']
@@ -131,10 +131,11 @@ class MicelaneoController {
     const informacionActualizadaMicelaneo = request.only(['nombre','pdf'])
 
 
-    console.log(informacionActualizadaMicelaneo)
+    console.log(`informacionActualizadaMicelaneo:: ${informacionActualizadaMicelaneo}`)
+
     try{
 
-      if(request.file('pdf') && request.file('imagen') !== undefined ){
+      if(request.file('pdf') && request.file('pdf') !== undefined ){
 
         const archivoPDF = request.file('pdf', {
           types: ['pdf']
@@ -144,7 +145,7 @@ class MicelaneoController {
         var cloudinary_response = await Cloudinary.upload(archivoPDF)
 
 
-        informacionMicelaneo.ruta = cloudinary_response.url
+        informacionActualizadaMicelaneo.ruta = cloudinary_response.url
       }
 
     }catch(error){
