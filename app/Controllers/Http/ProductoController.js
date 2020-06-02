@@ -20,13 +20,17 @@ class ProductoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ response }) {
+  async index ({ response, params}) {
 
-    const productos = await Producto
-      .query()
-      .with('categorias')
-      .orderBy('prioridad', 'asc')
-      .fetch()
+    let pagina  = params.pagina ? params.pagina : 1
+    let porPagina = params.porPagina ? params.porPagina : undefined
+
+       let productos = await Producto
+         .query()
+         .with('categorias')
+         .orderBy('prioridad','asc')
+         .paginate(pagina,porPagina)
+
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Lista de todos los productos',
@@ -72,7 +76,7 @@ class ProductoController {
 
     console.log("Request.body::",request.body)
 
-    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
+    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal'])
 
     let { categorias } =  request.post()
     if (categorias !== undefined ){

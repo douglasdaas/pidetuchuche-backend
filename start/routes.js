@@ -21,7 +21,7 @@ Route.get('/', () => {
 })
 
 //Productos
-Route.resource('productos', 'ProductoController')
+Route.resource('productos:pagina?:porPagina?', 'ProductoController')
     .middleware(new Map([
       [['store', 'update', 'destroy'], ['auth']],
       [['show', 'update', 'destroy'], ['findProducto']]

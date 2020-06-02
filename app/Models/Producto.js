@@ -8,6 +8,7 @@ class Producto extends Model {
   static boot () {
     super.boot()
     this.addHook('beforeSave', 'ProductoHook.calcularPrecioFinal')
+    this.addHook('beforeSave','ProductoHook.validarProductoPrincipal')
   }
 
 
