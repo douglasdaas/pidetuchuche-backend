@@ -76,7 +76,7 @@ class ProductoController {
 
     console.log("Request.body::",request.body)
 
-    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal'])
+    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
 
     let { categorias } =  request.post()
     if (categorias !== undefined ){
@@ -161,7 +161,7 @@ class ProductoController {
     }
     const  producto  = await Producto.find(id)
 
-    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal'])
+    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
 
 
     console.log(informacionActualizadaProducto)
@@ -195,7 +195,7 @@ class ProductoController {
     console.log(categorias)
 
     await producto.categorias().detach()
-    if (categorias && categorias.length > 0 && categorias !== undefined){
+    if (categorias && categorias.length > 0){
       await producto.categorias().detach()
       await producto.categorias().attach(categorias)
     }
