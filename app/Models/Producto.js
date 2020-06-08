@@ -8,11 +8,14 @@ class Producto extends Model {
   static boot () {
     super.boot()
     this.addHook('beforeSave', 'ProductoHook.calcularPrecioFinal')
+    this.addHook('beforeSave','ProductoHook.validarProductoPrincipal')
   }
 
 
   categorias () {
-    return this.belongsToMany('App/Models/Categoria')
+    return this
+      .belongsToMany('App/Models/Categoria')
+      .withPivot(['principal_categoria'])
   }
 
 }

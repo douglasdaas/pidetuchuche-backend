@@ -54,6 +54,9 @@ Route
   .apiOnly()
   .formats(['json'])
 
+Route.get('categorias-principal/:id', 'CategoriaController.principal')
+  .formats(['json'])
+
 //Miselaneo
 Route
   .resource('miselaneos', 'MicelaneoController')

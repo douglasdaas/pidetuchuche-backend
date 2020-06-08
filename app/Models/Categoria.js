@@ -10,7 +10,9 @@ class Categoria extends Model {
   }
 
   productos() {
-    return this.belongsToMany('App/Models/Producto')
+    return this
+      .belongsToMany('App/Models/Producto')
+      .withPivot(['principal_categoria'])
   }
 
 }

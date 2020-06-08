@@ -29,6 +29,31 @@ class CategoriaController {
 
   }
 
+  /**
+   * Show a list of all categorias con sus productos principales.
+   * GET categorias-principal/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   * @param {View} ctx.view
+   */
+  async principal ({ response, params:{id} }) {
+
+    const categoria = await Categoria.find(id)
+
+    await categoria.loadMany({
+      productos: (builder) => builder.where('principal_categoria',true)
+    })
+
+    const productos_principales = categoria.getRelated('productos')
+
+    response.header('Access-Control-Allow-Origin', '*').status(200).json({
+      mensaje: `Lista de todos los productos principales por la categoria ${id}, hay ${productos_principales.toJSON().length} ${productos_principales.toJSON().length === 1 ? 'producto principal por categoria' : 'productos principales por categoria' }`,
+      datos: productos_principales
+    })
+  }
+
 
   /**
    * Create/save a new categoria.

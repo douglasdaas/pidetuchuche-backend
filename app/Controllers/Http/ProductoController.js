@@ -72,9 +72,9 @@ class ProductoController {
 
     console.log("Request.body::",request.body)
 
-    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento'])
+    const informacionProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
 
-    let { categorias } =  request.post()
+    let { categorias, principal_categoria } =  request.post()
     if (categorias !== undefined ){
       categorias = JSON.parse(categorias)
     }
@@ -106,7 +106,12 @@ class ProductoController {
     const producto = await Producto.create(informacionProducto)
 
     if (categorias && categorias.length > 0){
-      await producto.categorias().attach(categorias)
+      await producto.categorias().attach(categorias, (row) =>{
+        if (principal_categoria){
+          console.log(`principal_categoria:: ${principal_categoria}`)
+          row.principal_categoria = principal_categoria
+        }
+      })
       producto.categorias = await producto.categorias().fetch()
     }
 
@@ -157,7 +162,7 @@ class ProductoController {
     }
     const  producto  = await Producto.find(id)
 
-    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal'])
+    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
 
 
     console.log(informacionActualizadaProducto)
@@ -177,8 +182,6 @@ class ProductoController {
       }
 
 
-
-
     }catch(error){
 
       return response.status(500).json({status: false, error: error })
@@ -191,9 +194,14 @@ class ProductoController {
     console.log(categorias)
 
     await producto.categorias().detach()
-    if (categorias && categorias.length > 0 && categorias !== undefined){
+    if (categorias && categorias.length > 0){
       await producto.categorias().detach()
-      await producto.categorias().attach(categorias)
+      await producto.categorias().attach(categorias, (row) =>{
+        if (principal_categoria){
+          console.log(`principal_categoria:: ${principal_categoria}`)
+          row.principal_categoria = principal_categoria
+        }
+      })
     }
     producto.categorias = await producto.categorias().fetch()
 
