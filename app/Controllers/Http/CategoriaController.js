@@ -24,7 +24,8 @@ class CategoriaController {
 
      response.header('Access-Control-Allow-Origin', '*').status(200).json({
       message: 'Lista de todas las categorias.',
-      datos: categorias
+      datos: categorias,
+       status: true
     })
 
   }
@@ -50,7 +51,8 @@ class CategoriaController {
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: `Lista de todos los productos principales por la categoria ${id}, hay ${productos_principales.toJSON().length} ${productos_principales.toJSON().length === 1 ? 'producto principal por categoria' : 'productos principales por categoria' }`,
-      datos: productos_principales
+      datos: productos_principales,
+      status: true
     })
   }
 
@@ -72,7 +74,8 @@ class CategoriaController {
 
     response.header('Access-Control-Allow-Origin', '*').status(201).json({
       mensaje: 'Nueva categoria creada correctamente.',
-      datos: categoria
+      datos: categoria,
+      status: true
     })
 
   }
@@ -90,14 +93,13 @@ class CategoriaController {
 
     const { categoria } = request
 
-    const productos = await categoria.productos().fetch()
-
-    categoria.productos = productos
+    categoria.productos = await categoria.productos().fetch()
 
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Categoria encontrada correctamente.',
-      datos: categoria
+      datos: categoria,
+      status: true
     })
 
   }
@@ -114,7 +116,8 @@ class CategoriaController {
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Categoria actualizada correctamente.',
-      datos: categoria
+      datos: categoria,
+      status: true
     })
 
 

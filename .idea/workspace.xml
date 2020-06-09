@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="Principales por categoria">
-      <change afterPath="$PROJECT_DIR$/database/migrations/1591642200129_producto_schema.js" afterDir="false" />
+    <list default="true" id="c7f9e295-a867-4ab5-bd29-1ad08063f722" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Http/CategoriaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/CategoriaController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ProductoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Categoria.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Categoria.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Hooks/ProductoHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Hooks/ProductoHook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Producto.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Producto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +136,7 @@
       <workItem from="1586287047000" duration="8000" />
       <workItem from="1586307407685" duration="17000" />
       <workItem from="1586382689443" duration="245000" />
+      <workItem from="1591669434478" duration="206000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <created>1584562268307</created>
@@ -219,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586210382695</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Principales por categoria">
+      <created>1591647552538</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591647552538</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Principales por categoria">
+      <created>1591647586317</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591647586317</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +259,8 @@
     <MESSAGE value="Imagen para productos sin imagen" />
     <MESSAGE value="arreglo de update producto" />
     <MESSAGE value="arreglo de update producto ahora si" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglo de update producto ahora si" />
+    <MESSAGE value="Principales por categoria" />
+    <option name="LAST_COMMIT_MESSAGE" value="Principales por categoria" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="96" key="#Notifications" timestamp="1586046306260">
@@ -260,10 +271,10 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="452" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.814@0.23.1440.814" timestamp="1584562761961" />
-    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1591647552336">
+    <state x="313" y="35" key="CommitChangelistDialog2" timestamp="1591647586172">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1591647552336" />
+    <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1591647586172" />
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1586204832085" />
     <state x="313" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1586210382570" />
     <state x="119" y="143" width="1200" height="579" key="DiffContextDialog" timestamp="1591647569066">
@@ -298,10 +309,10 @@
     </state>
     <state x="229" y="69" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1584562475612" />
     <state x="229" y="69" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1586046659962" />
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1591647570564">
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1591647587728">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1591647570564" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1591647587728" />
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1586204834164" />
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1586210384501" />
     <state x="119" y="144" width="1200" height="579" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586210108100">

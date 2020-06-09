@@ -30,7 +30,8 @@ class ProductoController {
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Lista de todos los productos',
-      datos: productos
+      datos: productos,
+      status: true
     })
   }
 
@@ -55,7 +56,9 @@ class ProductoController {
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: `Lista de todos los productos Principales, hay ${productos.toJSON().length} ${productos.toJSON().length === 1 ? 'producto principal' : 'productos principales' }`,
-      datos: productos
+      datos: productos,
+      status: true
+
     })
   }
 
@@ -117,7 +120,9 @@ class ProductoController {
 
     response.header('Access-Control-Allow-Origin', '*').status(201).json({
       mensaje: 'Nuevo producto creado correctamente.',
-      datos: producto
+      datos: producto,
+      status: true
+
     })
   }
 
@@ -134,14 +139,12 @@ class ProductoController {
 
     const { producto } = request
 
-
-    const categorias = await producto.categorias().fetch()
-
-    producto.categorias = categorias
+    producto.categorias = await producto.categorias().fetch()
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Producto encontrado correctamente.',
-      datos: producto
+      datos: producto,
+      status: true
     })
 
   }
@@ -207,7 +210,8 @@ class ProductoController {
 
     response.header('Access-Control-Allow-Origin', '*').status(200).json({
       mensaje: 'Producto actualizado correctamente.',
-      datos: producto
+      datos: producto,
+      status: true
     })
 
   }
@@ -247,7 +251,8 @@ class ProductoController {
       mensaje: 'Venta Realizada correctamente.',
       existencia: producto.cantidad,
       ventaRealizada: cantidad,
-      datos: producto
+      datos: producto,
+      status: true
     })
 
   }
