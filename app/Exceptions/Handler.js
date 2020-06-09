@@ -33,7 +33,8 @@ class ExceptionHandler extends BaseExceptionHandler {
     } else {
       response.status(error.status).json({
         'nombre del error': error.name,
-        mensaje: error.message
+        mensaje: error.message,
+        status: false
       })
     }
 
