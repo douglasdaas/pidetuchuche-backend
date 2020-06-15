@@ -159,7 +159,7 @@ class ProductoController {
    */
   async update ({ params: {id}, request, response }) {
 
-    let { categorias } =  request.post()
+    let { categorias, principal_categoria } =  request.post()
     if (categorias !== undefined ){
       categorias = JSON.parse(categorias)
     }
