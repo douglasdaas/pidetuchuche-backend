@@ -12,10 +12,12 @@ ProductoHook.calcularPrecioFinal = async (producto) => {
 }
 
 ProductoHook.validarProductoPrincipal = async (producto) => {
+  const productoEnBD = await Producto.find(producto.id)
   const cuenta = await Producto.query().where('principal',true).getCount()
   console.log(`cuenta:: ${cuenta}`)
-
-  if (cuenta >= 5 ) {
-    throw new Error('Maxima capacidad de productos principales alcanzada, desmarque algun prodcuto principal para poder mostrar este')
-  }
+  console.log(`producto.principal:: ${JSON.stringify(producto.principal)}`)
+  console.log(`producto.principal en la bd:: ${JSON.stringify(productoEnBD.principal)}`)
+    if (cuenta >= 5 && producto.principal === 'true' &&  productoEnBD.principal === 'false') {
+      throw new Error('Maxima capacidad de productos principales alcanzada, desmarque algun prodcuto principal para poder mostrar este')
+    }
 }

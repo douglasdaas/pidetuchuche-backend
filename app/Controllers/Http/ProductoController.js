@@ -165,8 +165,11 @@ class ProductoController {
     }
     const  producto  = await Producto.find(id)
 
-    const informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
-
+    let informacionActualizadaProducto = request.only(['imagen','nombre','descripcion','cantidad','prioridad','precio','descuento','principal','promo_gratis'])
+    if (!informacionActualizadaProducto.principal)
+      informacionActualizadaProducto.principal = false
+    if (!informacionActualizadaProducto.promo_gratis)
+      informacionActualizadaProducto.promo_gratis = false
 
     console.log(informacionActualizadaProducto)
     try{
